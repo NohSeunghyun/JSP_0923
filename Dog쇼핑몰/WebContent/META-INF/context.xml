@@ -1,0 +1,30 @@
+<Context>
+<!-- 오라클서버 -->
+	<Resource 
+	name="jdbc/OracleDB" 
+ 	auth="Container"
+ 	type="javax.sql.DataSource" 
+ 	username="system" 
+ 	password="1234"
+ 	driverClassName="oracle.jdbc.driver.OracleDriver"
+ 	factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+ 	url="jdbc:oracle:thin:@127.0.0.1:1521:XE"
+ 	maxActive="500" 
+	maxIdle="100"
+	maxWait="1000"
+ 	/>
+ 	
+<!-- mysql서버 -->
+	<!-- <Resource name="jdbc/MySQLDB"
+   	auth="Container"
+  	type="javax.sql.DataSource"
+  	username="java"
+   	password="java"
+   	driverClassName="com.mysql.cj.jdbc.Driver"
+   	factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+   	url="jdbc:mysql://localhost:3306/testdb?serverTimezone=Asia/Seoul"
+   	maxActive="500" 
+   	maxIdle="100"
+   	maxWait="1000"/> -->
+</Context>
+<!-- driverClassName="com.mysql.jdbc.Driver" -->
